@@ -1,0 +1,82 @@
+input[type="number"] {
+    --moz-appearance: textfield; /* Firefox */
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Safari */
+    margin: 0; /* Remove margin */
+    display: none; /* Hide arrows */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: url(./assets/img/Sao_Paulo.webp) no-repeat center ;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    margin: 200px 500px;
+    padding: 25px;
+    background-color: #a7a7a7;
+}
+.titulo h1{
+    font-size: 2.5vw;
+}
+.entrada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entrada input{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+}
+.entrada button{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+.saida{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    right: 15px;
+}
+.saida h3{
+    font-size: 1.8vw;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+}
+.resultado{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.resultado p{
+    font-weight: 700;
+    color: rgba(70, 70, 70, 1);
+    font-size: 1.5vw;
+}
+.resultado span{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+.local-box{
+    display: flex;
+}
